@@ -7,7 +7,6 @@ import utilities.Driver;
 
 public class AdresBigileri {
     public AdresBigileri(){ PageFactory.initElements(Driver.getDriver(),this); }
-
     @FindBy(xpath = "(//li[@class='half'])[1]")
     public WebElement yeniAdresOlustur;
     @FindBy(xpath = "//input[@name='title']")
@@ -18,7 +17,6 @@ public class AdresBigileri {
     public WebElement soyad;
     @FindBy(xpath = "//input[@name='phone_number']")
     public WebElement telefon;
-
     @FindBy(xpath = "//select[@name='city']")
     public WebElement il;
     @FindBy(xpath = "//select[@name='township']")
@@ -27,15 +25,6 @@ public class AdresBigileri {
     public WebElement mahalle;
     @FindBy(xpath = "//textarea[@class='js-address-textarea']")
     public WebElement adres;
-
     @FindBy(xpath = "(//button[@type='button'])[6]")
     public WebElement adresKaydet;
-
-    @FindBy(xpath = "//label[@data-slug='05']")
-    public WebElement kargoSecim;
-
-    @FindBy(xpath ="//button[@data-index='1']" )
-    public WebElement kargoSecimDevam;
-
-
 }

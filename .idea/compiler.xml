@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="a101_Selenium" />
+        <module name="mycucumberproject" />
       </profile>
     </annotationProcessing>
   </component>

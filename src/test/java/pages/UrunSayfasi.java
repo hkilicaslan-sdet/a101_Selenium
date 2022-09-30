@@ -7,8 +7,6 @@ import utilities.Driver;
 
 public class UrunSayfasi {
     public UrunSayfasi(){ PageFactory.initElements(Driver.getDriver(),this); }
-
-
    @FindBy(xpath = "(//input[@class='js-filter-choice'])[6]")
     //@FindBy(xpath = "//label[@for='attributes_integration_colourSİYAH']")
     public WebElement siyahRenk;
@@ -26,4 +24,9 @@ public class UrunSayfasi {
     @FindBy(xpath = "//i[@class='icon-sepetekle']")
     public WebElement sepeteEkle;
 
+    @FindBy(partialLinkText = "Görüntüle")
+    public WebElement sepetiGoruntule;
+
+    @FindBy(xpath = "//a[@class='button green checkout-button block js-checkout-button']")
+    public WebElement sepetiOnayla;
 }
